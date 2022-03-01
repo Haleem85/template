@@ -1,0 +1,72 @@
+* {
+  border-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App___lists {
+  display: flex;
+  justify-content: center;
+}
+
+.List___container {
+  width: calc(100% / 3);
+  padding: 10px;
+  background: #efefef;
+}
+
+.List___header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  border-bottom: solid 1px;
+}
+
+.List___name {
+  font-weight: bold;
+}
+
+.List___items {
+  padding: 10px 0;
+}
+
+.ListItem___container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.ListItem___button {
+  width: 120px;
+}
+
+.ListItem___label__done {
+  color: #ccc;
+}
+
+.Chart___title {
+  font-weight: bold;
+  border-bottom: 1px solid;
+  margin: 10px;
+  padding-bottom: 4px;
+}
+
+.ChartBar___container {
+  position: relative;
+}
+
+.ChartBar___background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: width 0.2s;
+}
+
+.ChartBar___label {
+  width: 100%;
+  padding: 10px;
+}

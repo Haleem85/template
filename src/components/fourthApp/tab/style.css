@@ -1,0 +1,32 @@
+body {
+  font-family: "Avenir", Geneva, Verdana, sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.button {
+  font-size: 1.2em;
+  font-weight: 100;
+  border: 0;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.active {
+  border-bottom: 2px solid #40b6da;
+}
+
+.tabContent {
+  text-align: justify;
+  font-weight: 100;
+  padding: 2% 5%;
+}
