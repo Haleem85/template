@@ -8,8 +8,11 @@ import "./style.css";
 export default class Messages extends React.Component {
   constructor(props) {
     super(props);
+    // getMessages = getMessages;
+    // getMessages = this.getMessages.bind([getMessages()]);
     this.state = {
       messages: [],
+      // getMessages: getMessages,
       newMessageData: {
         firstName: "",
         lastName: "",
@@ -31,9 +34,13 @@ export default class Messages extends React.Component {
       },
     };
   }
+
+  // const [getMessages, setGetMessages] =useState(getMessages());
   componentDidMount() {
     this.getMessages();
   }
+
+  // const getMessages= this.getMessage();
   getMessages() {
     apiClient.get("/api/message").then((response) => {
       if (response.status === 200) {
