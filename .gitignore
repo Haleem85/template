@@ -12,6 +12,7 @@
 /build
 /.vs
 /archive
+/.vscode
 # misc
 .DS_Store
 .env.local
