@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Haleem85.github.io/third_app/static/css/main.f94af64c.css",
-    "main.js": "/Haleem85.github.io/third_app/static/js/main.fed4e0a3.js",
-    "static/js/787.b2667af1.chunk.js": "/Haleem85.github.io/third_app/static/js/787.b2667af1.chunk.js",
-    "index.html": "/Haleem85.github.io/third_app/index.html",
-    "main.f94af64c.css.map": "/Haleem85.github.io/third_app/static/css/main.f94af64c.css.map",
-    "main.fed4e0a3.js.map": "/Haleem85.github.io/third_app/static/js/main.fed4e0a3.js.map",
-    "787.b2667af1.chunk.js.map": "/Haleem85.github.io/third_app/static/js/787.b2667af1.chunk.js.map"
+    "main.css": "/third_app/static/css/main.f94af64c.css",
+    "main.js": "/third_app/static/js/main.e47d7be0.js",
+    "static/js/787.b2667af1.chunk.js": "/third_app/static/js/787.b2667af1.chunk.js",
+    "index.html": "/third_app/index.html",
+    "main.f94af64c.css.map": "/third_app/static/css/main.f94af64c.css.map",
+    "main.e47d7be0.js.map": "/third_app/static/js/main.e47d7be0.js.map",
+    "787.b2667af1.chunk.js.map": "/third_app/static/js/787.b2667af1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f94af64c.css",
-    "static/js/main.fed4e0a3.js"
+    "static/js/main.e47d7be0.js"
   ]
 }
