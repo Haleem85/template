@@ -10,7 +10,8 @@
 
 # production
 /build
-
+/.vs
+/archive
 # misc
 .DS_Store
 .env.local
