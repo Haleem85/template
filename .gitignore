@@ -14,7 +14,7 @@
 
 #other
 
-archive/
+/archive
 .vscode/
 # misc
 .DS_Store

@@ -1,5 +1,6 @@
 {
-  "name": "react_template",
+  "homepage": "https://Haleem85.github.io/third_app/",
+  "name": "third_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
