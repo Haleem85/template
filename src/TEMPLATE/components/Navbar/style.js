@@ -29,7 +29,7 @@ export const Input = styled.input`
   display: none;
 
   &:checked {
-    background: url("/images/Navbar/close.png) no-repeat;
+    background: url("%PUBLIC_URL%/images/Navbar/close.png) no-repeat;
     background-size: cover;
   }
 `;

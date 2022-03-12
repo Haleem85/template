@@ -1,71 +1,82 @@
 import React from "react";
 import "./style.css";
+import {
+  PortfolioSection,
+  PortfolioTitle,
+  PortfolioTitleSpan,
+  PortfolioList,
+  PortfolioItem,
+  Box,
+  Image,
+  Overlay,
+  OverlaySpan,
+} from "./style";
 
 const Portfolio = () => {
   return (
-    <div class="portfolio">
-      <h2 class="portfolio-title">
-        <span>My</span> Portfolio
-      </h2>
-      <ul class="portfolio-list">
+    <PortfolioSection>
+      <PortfolioTitle>
+        <PortfolioTitleSpan>My</PortfolioTitleSpan> Portfolio
+      </PortfolioTitle>
+      <PortfolioList>
         <li class="portfolio-item active">All</li>
         <li class="portfolio-item">HTML</li>
         <li class="portfolio-item">Photoshop</li>
         <li class="portfolio-item">Wordpress</li>
         <li class="portfolio-item">Mobile</li>
-      </ul>
+      </PortfolioList>
 
-      <div class="box">
+      <Box>
         <div>
-          <img src="images/Portfolio/portfolio-img1.jpg" alt="" />
+          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img1.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="images/Portfolio/portfolio-img2.jpg" alt="" />
+          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img2.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="images/Portfolio/portfolio-img3.jpg" alt="" />
+          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img3.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="images/Portfolio/portfolio-img4.jpg" alt="" />
+          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img4.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="images/Portfolio/portfolio-img5.jpg" alt="" />
+          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img5.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="images/Portfolio/portfolio-img6.jpg" alt="" />
+          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img6.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="images/Portfolio/portfolio-img7.jpg" alt="" />
+          <img src="%PUBLIC_URL%images/Portfolio/portfolio-img7.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="images/Portfolio/portfolio-img8.jpg" alt="" />
+          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img8.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
-      </div>
-    </div>
+      </Box>
+    </PortfolioSection>
   );
 };
 
