@@ -3,51 +3,56 @@
             Portfolio Styles
     ===============================
 */
+import React from 'react';
+import styled from 'styled-components';
 
-.portfolio {
+
+
+export const Portfolio= styled.div`
   background: #f8f8f8;
   padding-top: 20px;
   overflow: hidden;
-}
+  
+  `; 
 
-.portfolio .portfolio-title {
+
+export const portfolio-title {
   text-align: center;
   font-size: 35px;
 }
 
-.portfolio .portfolio-title span {
+export const span {
   font-weight: normal;
 }
 
-.portfolio .portfolio-list {
+export const portfolio-list {
   list-style: none;
   text-align: center;
   margin: 20px 0;
 }
 
-.portfolio .portfolio-list .portfolio-item {
+export const portfolio-item {
   display: inline-block;
   width: 100px;
   padding: 10px;
 }
 
-.portfolio .portfolio-list .portfolio-item.active {
+ export const portfolio-item.active {
   background: #eb5424;
   color: #fff;
 }
 
-.box div {
+ export const box div {
   width: 25%;
   float: left;
   font-size: 0;
   position: relative;
 }
-
-.box div img {
+export const img {
   width: 100%;
 }
 
-.box div .overlay {
+export const box div .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +63,7 @@
   opacity: 0;
 }
 
-.box div .overlay span {
+export const box div .overlay span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,7 +75,7 @@
   border: 2px solid #eb5424;
 }
 
-.box div:hover .overlay {
+ export const box div:hover .overlay {
   opacity: 1;
 }
 
@@ -80,7 +85,7 @@
     margin: auto;
   }
 
-  .box div {
+  export const box div {
     width: 100%;
   }
 }
