@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "./Navbar/index";
 import Home from "./Home";
 import Work from "./Work";
-import {Portfolio} from "./Portfolio";
+import Portfolio from "./Portfolio";
 
 const App = () => {
   return (
