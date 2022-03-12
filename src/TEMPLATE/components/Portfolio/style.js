@@ -52,18 +52,18 @@ export const ImageWrapper = styled.div`
   float: left;
   font-size: 0;
   position: relative;
-  &: hover > div {
-    opacity: 4 0%;
+  &:hover > div {
+    opacity: 1;
   }
 `;
 export const Image = styled.img`
   width: 100%;
 `;
-//   @media (min-width: 576px) and (max-width: 768px) {
+//   @media (min-width: 576px  ) and (max-width: 768px) {
 // {
 //     width: 50%;
 //   }
-export const Overlay = styled.p`
+export const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -84,9 +84,6 @@ export const OverlaySpan = styled.span`
   padding: 10px 20px;
   cursor: pointer;
   border: 2px solid #eb5424;
-  &: hover {
-    opacity: 1;
-  }
 `;
 
 //   export const box div = styled.{...}`

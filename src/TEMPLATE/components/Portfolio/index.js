@@ -1,5 +1,6 @@
-import React from "react";
-import "./style.css";
+import React, { useState, useEffect, useContext } from "react";
+import axios from "axios";
+// import "./style.css";
 import {
   PortfolioSection,
   PortfolioTitle,
@@ -11,8 +12,27 @@ import {
   Overlay,
   OverlaySpan,
 } from "./style";
-
+const dataFile = "";
 const Portfolio = () => {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    axios.get("template/js/data.json").then((res) => {
+      setImages(res.data.portfolio);
+    });
+  }, []);
+
+  const PortfolioImages = images.map(function (imageItem) {
+    return (
+      <ImageWrapper key={imageItem.id}>
+        <Image src={imageItem.image} alt="" />
+        <Overlay>
+          <OverlaySpan>Show Image</OverlaySpan>
+        </Overlay>
+      </ImageWrapper>
+    );
+  });
+
   return (
     <PortfolioSection>
       <PortfolioTitle>
@@ -26,80 +46,7 @@ const Portfolio = () => {
         <PortfolioItem>Mobile</PortfolioItem>
       </PortfolioList>
 
-      <div className="Box">
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img1.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img2.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img3.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img4.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img5.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img6.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img7.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Image
-            src={require("../../images/Portfolio/portfolio-img8.jpg")}
-            alt=""
-          />
-          <Overlay>
-            <span>Show Image</span>
-          </Overlay>
-        </ImageWrapper>
-      </div>
+      <div className="Box">{PortfolioImages}</div>
     </PortfolioSection>
   );
 };
