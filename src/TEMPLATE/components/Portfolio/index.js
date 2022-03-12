@@ -28,37 +28,37 @@ const Portfolio = () => {
 
       <Box>
         <div>
-          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img1.jpg" alt="" />
+          <img src="/images/Portfolio/portfolio-img1.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img2.jpg" alt="" />
+          <img src="/images/Portfolio/portfolio-img2.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img3.jpg" alt="" />
+          <img src="/images/Portfolio/portfolio-img3.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img4.jpg" alt="" />
+          <img src="/images/Portfolio/portfolio-img4.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img5.jpg" alt="" />
+          <img src="/images/Portfolio/portfolio-img5.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
         </div>
         <div>
-          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img6.jpg" alt="" />
+          <img src="/images/Portfolio/portfolio-img6.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
@@ -70,7 +70,7 @@ const Portfolio = () => {
           </p>
         </div>
         <div>
-          <img src="%PUBLIC_URL%/images/Portfolio/portfolio-img8.jpg" alt="" />
+          <img src="/images/Portfolio/portfolio-img8.jpg" alt="" />
           <p class="overlay">
             <span>Show Image</span>
           </p>
