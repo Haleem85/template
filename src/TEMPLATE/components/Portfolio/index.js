@@ -6,7 +6,7 @@ import {
   PortfolioTitleSpan,
   PortfolioList,
   PortfolioItem,
-  Box,
+  ImageWrapper,
   Image,
   Overlay,
   OverlaySpan,
@@ -19,87 +19,87 @@ const Portfolio = () => {
         <PortfolioTitleSpan>My</PortfolioTitleSpan> Portfolio
       </PortfolioTitle>
       <PortfolioList>
-        <li class="portfolio-item active">All</li>
-        <li class="portfolio-item">HTML</li>
-        <li class="portfolio-item">Photoshop</li>
-        <li class="portfolio-item">Wordpress</li>
-        <li class="portfolio-item">Mobile</li>
+        <PortfolioItem active>All</PortfolioItem>
+        <PortfolioItem>HTML</PortfolioItem>
+        <PortfolioItem>Photoshop</PortfolioItem>
+        <PortfolioItem>Wordpress</PortfolioItem>
+        <PortfolioItem>Mobile</PortfolioItem>
       </PortfolioList>
 
-      <Box>
-        <div>
-          <img
+      <div className="Box">
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img1.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-        <div>
-          <img
+          </Overlay>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img2.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-        <div>
-          <img
+          </Overlay>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img3.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-        <div>
-          <img
+          </Overlay>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img4.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-        <div>
-          <img
+          </Overlay>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img5.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-        <div>
-          <img
+          </Overlay>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img6.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-        <div>
-          <img
+          </Overlay>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img7.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-        <div>
-          <img
+          </Overlay>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image
             src={require("../../images/Portfolio/portfolio-img8.jpg")}
             alt=""
           />
-          <p class="overlay">
+          <Overlay>
             <span>Show Image</span>
-          </p>
-        </div>
-      </Box>
+          </Overlay>
+        </ImageWrapper>
+      </div>
     </PortfolioSection>
   );
 };

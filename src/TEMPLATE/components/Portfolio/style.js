@@ -31,6 +31,8 @@ export const PortfolioItem = styled.li`
   display: inline-block;
   width: 100px;
   padding: 10px;
+  background: ${(props) => (props.active ? "#eb5424" : "")};
+  color: ${(props) => (props.active ? "#fff" : "#000")};
 `;
 
 //  export const portfolio-item.active = styled.{...}`
@@ -45,20 +47,22 @@ export const PortfolioItem = styled.li`
 
 // }
 
-export const Box = styled.div`
+export const ImageWrapper = styled.div`
   width: 25%;
   float: left;
   font-size: 0;
   position: relative;
-  @media (min-width: 576px) and (max-width: 768px) {
-{
-    width: 50%;
+  &: hover > div {
+    opacity: 4 0%;
   }
 `;
 export const Image = styled.img`
   width: 100%;
 `;
-
+//   @media (min-width: 576px) and (max-width: 768px) {
+// {
+//     width: 50%;
+//   }
 export const Overlay = styled.p`
   position: absolute;
   top: 0;
