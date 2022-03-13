@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const NavbarSection = styled.div`
   padding: 20px 0;
   overflow: hidden;
@@ -29,7 +29,7 @@ export const Input = styled.input`
   display: none;
 
   &:checked {
-    background: url(${require("../../images/Navbar/close.png")}) no-repeat;
+    background: url("images/Navbar/close.png") no-repeat;
     background-size: cover;
   }
 `;
@@ -72,7 +72,7 @@ export const ListItem = styled.li`
 
 //   text-align: center;
 // `;
-export const Anchor = styled.a`
+export const Anchor = styled(Link)`
   display: block;
   color: #222;
   text-decoration: none;
@@ -81,6 +81,7 @@ export const Anchor = styled.a`
 
   &:hover {
     color: #eb5424;
+    background-color: ;
   }
 `;
 

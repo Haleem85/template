@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
-// import "./style.css";
+import "./style.css";
 import {
   PortfolioSection,
   PortfolioTitle,
