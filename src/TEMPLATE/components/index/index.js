@@ -1,18 +1,12 @@
 import React from "react";
 
 import Home from "../Home";
-import Work from "../Work";
-import Portfolio from "../Portfolio";
-import Footer from "../Footer";
 
 const Index = () => {
   return (
-    <>
+    <div>
       <Home />
-      <Work />
-      <Portfolio />
-      <Footer />
-    </>
+    </div>
   );
 };
 export default Index;
