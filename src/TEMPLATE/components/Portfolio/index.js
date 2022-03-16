@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import "./style.css";
@@ -17,7 +19,7 @@ const Portfolio = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    axios.get("js/data.json").then((res) => {
+    axios.get("/js/data.json").then((res) => {
       setImages(res.data.portfolio);
     });
   }, []);
