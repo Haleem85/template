@@ -1,0 +1,52 @@
+.navbar input,
+.navbar label {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+}
+
+.navbar input {
+  display: none;
+}
+
+.navbar label {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("./open.png") no-repeat;
+  background-size: cover;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.navbar input:checked ~ .ul-list {
+  display: block;
+}
+
+.navbar input:checked ~ label {
+  background: url("./close.png") no-repeat;
+  background-size: cover;
+}
+
+.navbar .ul-list {
+  width: 50%;
+  float: left;
+  list-style: none;
+  padding: 0%;
+}
+
+.navbar .ul-list .list-item {
+  display: inline-block;
+}
+
+.navbar .ul-list .list-item a {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.navbar .ul-list .list-item a:hover {
+  color: #eb5424;
+}
